@@ -1,0 +1,14 @@
+{
+  "name": "@bigbite/utils",
+  "version": "1.0.0",
+  "description": "Common utilities Big Bite use.",
+  "author": "Paul Taylor <paul@bigbite.net> (https://github.com/ampersarnie)",
+  "license": "UNLICENSED",
+  "exports": {
+    ".": "./index.js",
+    "./": "./src/"
+  },
+  "scripts": {},
+  "dependencies": {},
+  "peerDependencies": {}
+}
