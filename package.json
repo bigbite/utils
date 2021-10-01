@@ -1,14 +1,35 @@
 {
   "name": "@bigbite/utils",
-  "version": "1.0.0",
-  "description": "Common utilities Big Bite use.",
+  "version": "1.0.0-beta.1",
+  "description": "Common utilities.",
   "author": "Paul Taylor <paul@bigbite.net> (https://github.com/ampersarnie)",
-  "license": "UNLICENSED",
+  "url": "https://github.com/bigbite/utils",
+  "constributors": [
+    {
+      "name": "Paul Taylor",
+      "email": "paul@bigbite.net",
+      "url": "https://bigbite.net"
+    }
+  ],
   "exports": {
     ".": "./index.js",
-    "./": "./src/"
+    "./": "./src/",
+    "Dispatchers": "./src/dispatchers/",
+    "DOM": "./src/dom/",
+    "Events": "./src/events",
+    "Strings": "./src/strings/"
   },
   "scripts": {},
   "dependencies": {},
-  "peerDependencies": {}
+  "peerDependencies": {},
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bigbite/utils.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigbite/utils/issues"
+  },
+  "homepage": "https://github.com/bigbite/utils#readme"
 }
