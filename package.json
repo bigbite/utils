@@ -12,17 +12,17 @@
     }
   ],
   "exports": {
-    ".": "./index.js",
+    "./package.json": "./package.json",
     "./": "./src/",
-    "Dispatchers": "./src/dispatchers/",
-    "DOM": "./src/dom/",
-    "Events": "./src/events",
-    "Strings": "./src/strings/"
+    "./Dispatchers": "./src/dispatchers/",
+    "./DOM": "./src/dom/",
+    "./Events": "./src/events",
+    "./Strings": "./src/strings/"
   },
   "scripts": {},
   "dependencies": {},
   "peerDependencies": {},
-  "main": "index.js",
+  "main": "./src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bigbite/utils.git"
