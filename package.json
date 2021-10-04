@@ -1,6 +1,6 @@
 {
   "name": "@bigbite/utils",
-  "version": "1.0.0-beta.1",
+  "version": "1.0.0-alpha.1",
   "description": "Common utilities.",
   "author": "Paul Taylor <paul@bigbite.net> (https://github.com/ampersarnie)",
   "url": "https://github.com/bigbite/utils",
