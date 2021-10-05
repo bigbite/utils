@@ -14,7 +14,7 @@
   "scripts": {},
   "dependencies": {},
   "peerDependencies": {},
-  "main": "./src/index.js",
+  "main": "./index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bigbite/utils.git"
