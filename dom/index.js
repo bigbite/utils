@@ -1,4 +1,4 @@
-import waitFor from "./waitFor";
+import waitFor from './wait-for';
 
 export default {
   waitFor,

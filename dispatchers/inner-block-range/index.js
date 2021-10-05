@@ -1,13 +1,13 @@
-const InnerBlockRange = (quantity, blockName) => {
-  const {setAttributes, clientId, attributes} = ownProps;
-  const {getBlocks} = registry.select("core/block-editor");
+const InnerBlockRange = (quantity, blockName, registry) => {
+  const { setAttributes, clientId, attributes } = ownProps;
+  const { getBlocks } = registry.select('core/block-editor');
   const innerBlocks = getBlocks(clientId);
 
-  const {replaceInnerBlocks} = dispatch("core/block-editor");
+  const { replaceInnerBlocks } = dispatch('core/block-editor');
 
-  setAttributes({quantity});
+  setAttributes({ quantity });
 
-  const {quantity: prevQuantity} = attributes;
+  const { quantity: prevQuantity } = attributes;
 
   // Create new blocks
   if (quantity > prevQuantity) {

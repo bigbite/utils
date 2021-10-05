@@ -14,15 +14,14 @@ const waitFor = (query, callback, disconnect = true) => {
    * wait, so execute the callback straight away.
    */
   if (initialNode) {
-    callback(initialNode);
-    return;
+    return callback(initialNode);
   }
 
   const observer = new MutationObserver(() => {
     const node = document.querySelector(query);
 
     if (node) {
-      callback(node);
+      return callback(node);
     }
 
     if (node && disconnect) {

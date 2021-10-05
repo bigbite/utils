@@ -1,4 +1,4 @@
-import Delegate from "./delegate";
+import Delegate from './delegate';
 
 export default {
   Delegate,
