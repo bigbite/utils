@@ -1,6 +1,6 @@
 {
   "name": "@bigbite/utils",
-  "version": "1.0.0-alpha.4",
+  "version": "1.0.0-alpha.5",
   "description": "Common utilities.",
   "author": "Paul Taylor <paul@bigbite.net> (https://github.com/ampersarnie)",
   "url": "https://github.com/bigbite/utils",
@@ -11,10 +11,6 @@
       "url": "https://bigbite.net"
     }
   ],
-  "exports": {
-    "./package.json": "./package.json",
-    "./": "./src/"
-  },
   "scripts": {},
   "dependencies": {},
   "peerDependencies": {},
