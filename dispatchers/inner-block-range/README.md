@@ -5,7 +5,7 @@ Note: this assumes you want all the innerBlocks to be the same type, in this ins
 
 ## Example
 ```js
-import innerBlockRange from '@bigbite/utils/dispatchers/innerBlockRange';
+import innerBlockRange from '@bigbite/utils/dispatchers/inner-block-range';
 
 withDispatch((dispatch, ownProps, registry) => ({
   innerBlockRange,
