@@ -11,7 +11,9 @@
       "url": "https://bigbite.net"
     }
   ],
-  "scripts": {},
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {},
   "peerDependencies": {},
   "main": "./index.js",
@@ -23,5 +25,10 @@
   "bugs": {
     "url": "https://github.com/bigbite/utils/issues"
   },
-  "homepage": "https://github.com/bigbite/utils#readme"
+  "homepage": "https://github.com/bigbite/utils#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "jest": "^27.2.4"
+  }
 }
