@@ -20,12 +20,12 @@ const waitFor = (query, callback, disconnect = true) => {
   const observer = new MutationObserver(() => {
     const node = document.querySelector(query);
 
-    if (node) {
-      return callback(node);
-    }
-
     if (node && disconnect) {
       observer.disconnect();
+    }
+
+    if (node) {
+      return callback(node);
     }
   });
 
