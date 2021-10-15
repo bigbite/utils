@@ -20,7 +20,7 @@ describe('delegate functionality.', () => {
     expect.assertions(1);
 
     const clickEvent = (event) => {
-      if (delegate(event.target, '.child-item')) {
+      if (delegate(event.target, '.parent-item')) {
         expect(true).toBe(true);
       }
 
@@ -38,7 +38,7 @@ describe('delegate functionality.', () => {
     expect.assertions(1);
 
     const clickEvent = (event) => {
-      if (delegate(event.target, '.child-item')) {
+      if (!delegate(event.target, '.grandparent-item')) {
         expect(true).toBe(true);
       }
 
