@@ -1,4 +1,8 @@
-const InnerBlockRange = (quantity, blockName, registry) => {
+import { requireWP } from '../../wp';
+
+const InnerBlockRange = (dispatch, ownProps, registry) => (quantity, targetBlock) => {
+  requireWP();
+
   const { setAttributes, clientId, attributes } = ownProps;
   const { getBlocks } = registry.select('core/block-editor');
   const innerBlocks = getBlocks(clientId);
@@ -13,8 +17,8 @@ const InnerBlockRange = (quantity, blockName, registry) => {
   if (quantity > prevQuantity) {
     const blocksToAdd = quantity - prevQuantity;
     for (let i = 0; i < blocksToAdd; i += 1) {
-      // @TODO: Check if blockName is fn() and handle as appropriate to allow for callbacks.
-      const newBlock = createBlock(blockName);
+      // @TODO: Check if targetBlock is fn() and handle as appropriate to allow for callbacks.
+      const newBlock = createBlock(targetBlock);
       innerBlocks.push(newBlock);
     }
   }
