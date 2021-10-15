@@ -1,4 +1,5 @@
 import waitFor from './../index';
+
 describe('waitFor functionality.', () => {
   afterEach(() => {
     document.body.innerHTML = '';

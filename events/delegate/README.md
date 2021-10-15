@@ -3,7 +3,7 @@ A way to find out if the event actually ran on the desired element. This is usef
 
 ## Example
 ```js
-import delegate from '@bigbite/utils/delegate';
+import delegate from '@bigbite/utils/events/delegate';
 
 document.documentElement.addEventListener('click', (event) => {
 	if (delegate(event.target, '.some-selector') {
