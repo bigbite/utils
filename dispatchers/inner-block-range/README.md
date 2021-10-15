@@ -8,12 +8,13 @@ Note: this assumes you want all the innerBlocks to be the same type, in this ins
 import innerBlockRange from '@bigbite/utils/dispatchers/inner-block-range';
 
 const Component = () => {
+  // ...
   return (
     // ...
     <RangeControl
       label={__('Quantity', 'my-plugin')}
       value={quantity}
-      onChange={(newQuantity) => updateIcons(newQuantity, 'my-plugin/block')}
+      onChange={(newQuantity) => innerBlockRange(newQuantity, 'my-plugin/block')}
       min={1}
       max={24}
     />
